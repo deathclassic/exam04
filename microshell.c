@@ -143,6 +143,7 @@ int main(int argc, char **argv, char **env)
 	int	begin = 1;
 
 	dup_stdin = dup(0);
+	(void)argc;
 	while(argv[i])
 	{
 		if (!strcmp(argv[i], ";") || !argv[i + 1])
